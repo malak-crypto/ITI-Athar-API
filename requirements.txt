@@ -1,0 +1,4 @@
+# Third-party packages; Python and its standard-library modules are installed
+# by Conda and are not listed here.
+python-dotenv
+requests
