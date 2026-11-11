@@ -3,7 +3,8 @@
 A small Python program that fetches English technology headlines from the free
 [GNews API](https://gnews.io/) and displays them in a scrollable desktop
 window. Each story shows its title, source, publication time, description,
-and a button to open the article.
+and a button to open the article. The project is hosted in
+[malak-crypto/ITI-Athar-API](https://github.com/malak-crypto/ITI-Athar-API).
 
 The free plan requires a GNews API key, allows up to 100 requests per day and
 10 articles per request, and delays headlines. Get a free key at
@@ -11,12 +12,12 @@ https://gnews.io/register.
 
 ## Get the project
 
-Either download the repository as a ZIP from GitHub using **Code → Download
-ZIP** and extract it, or clone it if Git is installed:
+Download this repository as a ZIP using **Code → Download ZIP** and extract
+it, or clone the repository if Git is installed:
 
 ```text
-git clone https://github.com/malak-crypto/TechNewsAPI.git
-cd TechNewsAPI
+git clone https://github.com/malak-crypto/ITI-Athar-API.git
+cd ITI-Athar-API
 ```
 
 In Anaconda Prompt, change to the extracted or cloned project folder before

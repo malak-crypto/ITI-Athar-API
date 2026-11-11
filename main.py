@@ -8,7 +8,6 @@ from json import dumps
 from pathlib import Path
 from tkinter import ttk
 from webbrowser import open_new_tab
-
 import requests
 from dotenv import load_dotenv
 
@@ -89,7 +88,9 @@ def main() -> int:
     api_key = os.getenv("GNEWS_API_KEY")
     if "--cli" in sys.argv[1:]:
         if not api_key:
-            print("Missing GNEWS_API_KEY. Add your key to a .env file.", file=sys.stderr)
+            print(
+                "Missing GNEWS_API_KEY. Add your key to a .env file.", file=sys.stderr
+            )
             return 1
 
         try:
@@ -273,9 +274,7 @@ class NewsApp:
             return
         self.root.after(0, self._show_result, articles, None)
 
-    def _show_result(
-        self, articles: list[Article] | None, error: str | None
-    ) -> None:
+    def _show_result(self, articles: list[Article] | None, error: str | None) -> None:
         self.is_loading = False
         self.progress.stop()
         self.refresh_button.configure(state="normal")
